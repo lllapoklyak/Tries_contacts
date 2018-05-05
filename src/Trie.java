@@ -1,6 +1,9 @@
 import java.util.HashMap;
 import java.util.HashSet;
 
+/**
+ * @author Tatiana Sedneva
+ */
 public class Trie {
     private Node root=new Node();
     Trie(){};
@@ -39,7 +42,7 @@ public class Trie {
         public int size; //how many times we have this letter
 
         private void putChild(char ch){
-            //if we already have this letter inside , nothing gonna happend
+            //if we already have this letter inside , nothing gonna happened
             children.putIfAbsent(ch, new Node());
         }
         private Node getChild(char ch){
